@@ -1,0 +1,37 @@
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Задание 28. Зафиксируйте цену</title> 
+    <!-- подключаем TailwindCSS --> 
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <!-- подключаем свои шрифты --> 
+    <link rel="stylesheet" href="./style.css"> 
+</head> 
+<body> 
+    <!-- навигация задания --> 
+    <nav class="w-full h-max flex flex-row-reverse bg-teal-100 p-2 *:text-teal-950 "> 
+        <ul> 
+            <li class="group"> 
+                <label for="mini" class="cursor-pointer block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" /></svg></label> 
+                <input type="checkbox" id="mini" class="hidden peer/mini"> 
+                <ul class="hidden peer-checked/mini:flex flex-col absolute right-2 border border-teal-300 divide-y divide-teal-200 bg-teal-100"> 
+                    <li><a class="hover:bg-teal-300 block p-1" target="_blank" href="http://www.itmathrepetitor.ru/zadachi-po-html-i-css-bukva-i-stroka/">Ссылка на задание</a></li> 
+                    <li><a class="hover:bg-teal-300 block p-1" href="http://127.0.0.1:5500/">На главную</a></li> 
+                </ul> 
+            </li> 
+        </ul> 
+    </nav> 
+    <!-- выполняем задание внутри id="app" --> 
+    <div id="app" class="w-screen h-screen flex justify-center items-center "> 
+        <div class="flex justify-between w-[1024px] border border-green-300 bg-green-200 p-4">
+            <div class="grid grid-cols-2 grid-rows-2 items-center w-[100px]">
+                <span class="row-span-2 col-span-1 text-4xl">🔓</span>
+                <h4 class="w-max text-2xl text-blue-400 col-span-1 row-span-1">Зафиксируйте отличную цену для своей предстоящей поездки</h4>
+                <p class="w-max text-x text-teal-600 col-span-1 row-span-1">Укажите даты, чтобы увидеть эти цены, - получите мгновенное подтверждение бронирования.</p>
+            </div>
+                <button>❎</button>
+        </div>
+    </div> 
+</body> 
+</html>
