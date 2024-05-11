@@ -1,29 +1,86 @@
-<!DOCTYPE html> 
-<html lang="ru"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Задание 26. Безопасность</title> 
-    <script src="https://cdn.tailwindcss.com"></script> 
-    <link rel="stylesheet" href="./s.css"> 
-</head> 
-<body> 
-    <!-- вернуться на главную --> 
-    <nav class="w-full h-max flex flex-row-reverse bg-teal-100 p-2 *:text-teal-950 "> 
-        <ul> 
-            <li class="group"> 
-                <label for="mini" class="cursor-pointer block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" /></svg></label> 
-                <input type="checkbox" id="mini" class="hidden peer/mini"> 
-                <ul class="hidden peer-checked/mini:flex flex-col absolute right-2 border border-teal-300 divide-y divide-teal-200 bg-teal-100"> 
-                    <li><a class="hover:bg-teal-300 block p-1" target="_blank" href="http://www.itmathrepetitor.ru/zadachi-po-html-i-css-bezopasnost/">Ссылка на задание</a></li> 
-                    <li><a class="hover:bg-teal-300 block p-1" href="http://127.0.0.1:5500/">На главную</a></li> 
-                </ul> 
-            </li> 
-        </ul> 
-    </nav> 
-    <!-- выполняем задание внутри id="app" --> 
-    <div id="app" class="flex justify-center items-center bg w-full h-full "> 
-        <div class="border border-black w-80 h-40"></div>
-    </div> 
-</body> 
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- подключаем TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- подключаем свои стили -->
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body class="ns_grid_template overflow-x-hidden">
+
+    <header class="h-20 px-4 flex items-center justify-between">
+        <div class="header-2">
+
+            <nav class="bg-white py-2 md:py-4">
+              <div class="container px-4 mx-auto md:flex md:items-center">
+          
+                <div class="flex justify-between items-center">
+                  <a href="#" class="font-bold text-xl text-indigo-600">FWR</a>
+                  <button class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                </div>
+          
+                <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+                  <a href="#" class="p-2 lg:px-4 md:mx-2 text-white rounded bg-indigo-600">Home</a>
+                  <a href="#" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">About</a>
+                  <a href="#" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Features</a>
+                  <a href="#" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Pricing</a>
+                  <a href="#" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Contact</a>
+                  <a href="#" class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300">Login</a>
+                  <a href="#" class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">Signup</a>
+                </div>
+              </div>
+            </nav>
+          
+    </header>
+
+    <main class="px-4">
+        
+    </main>
+
+    <aside class="px-4">
+        <div class="p-4 flex flex-col gap-4 bg-teal-50 ">
+            <h2 class="text-xl font-medium">Домашние задания</h2>
+            <h3 class="text-lg font-medium">Часть 2</h3>
+            <div class="bg-teal-500 p-12 pr-0 box-border
+                        flex flex-wrap gap-4
+                        *:w-40 *:h-8 *:bg-teal-300 *:flex *:justify-center *:items-center
+                        *:text-teal-950 hover:*:brightness-125">
+                <a href="./homeworks/char2/01/">Задание 1</a>
+                <a href="./homeworks/char2/02/">Задание 2</a>
+                <a href="./homeworks/char2/03/">Задание 3</a>
+                <a href="./homeworks/char2/04/">Задание 4</a>
+                <a href="./homeworks/char2/05/">Задание 5</a>
+                <a href="./homeworks/char2/06/">Задание 6</a>
+                <a href="./homeworks/char2/22/">Задание 22</a>
+                <a href="./homeworks/char2/23/">Задание 23</a>
+                <a href="./homeworks/char2/24/">Задание 24</a>
+                <a href="./homeworks/char2/25/">Задание 25</a>
+                <a href="./homeworks/char2/26/">Задание 26</a>
+                <a href="./homeworks/char2/27/">Задание 27</a>
+                <a href="./homeworks/char2/28/">Задание 28</a>
+                <a href="./homeworks/char2/29/">Задание 29</a>
+                <a href="./homeworks/char2/33/">Задание 33</a>
+                <a href="./homeworks/char2/38/">Задание 38</a>
+                <a href="./homeworks/char2/78/">Задание 78</a>
+            </div>
+        </div>
+        
+    </aside>
+
+    <footer class="h-20 my-20 px-4 flex items-center justify-between bg-teal-950 text-teal-100">
+        <h3>© 2024</h3>
+    </footer>
+
+
+
+
+    
+</body>
+
 </html>
